@@ -1,0 +1,141 @@
+<!--Home-->
+<% if (title == "Home"){ %>
+    <div id="main_nav" class="container text-center p-3">
+      <h1 class="p-2">Welcome to my portfolio!</h1>     
+      <p class="p-0" id="about-body">My mission is to build clean, responsive, and 
+        maintainable web applications </p>
+        <br><br>
+      <p><a class="btn btn-dark" href="/about" role="button">More about me</a></p>
+</div><% } else {%><%} %>
+
+<!--About Section-->
+<% if (title == "About"){ %>
+ <section class="me-about" id="about">  
+   <br><h2 id="section_title">Hello, my name is Yasaman Barzegar.</h2><br>
+   <img src="/Assets/images/yasaman.jpg" width="250" class="me-about" id="my-image">
+
+    <p class="lead">I am Full Stack Web Developer Enthusiast. 
+      I am a highly motivated person who is always passionate and eager to learn more.  
+      <br>I am currently a candidate of an Advanced Diploma in Software Engineering Technology at 
+      Centennial College, from which I have gained programming skills in C#, Python, Java and JavaScript.<br>
+      As a Software Engineering student, I have developed sound basis of knowledge in software Engineering
+      methodologies, application of Agile, and object-oriented programming.<br>
+
+    </p>
+    <p><a class="btn btn-dark" href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:fb27bd8e-348b-4a17-a374-89c391d408ef" 
+      target="_blank" role="button">Resume</a></p>  
+          
+</section>
+</div><% } else {%><%} %>
+
+<!--Project Section-->
+<% if (title == "Projects"){ %>
+  <section class="my-projects" id="project">
+    <h2 class="project__title project_title-myproject">My Projects</h2>
+    <div class="projects">
+      
+      <!--Project item 01-->
+      <div>
+          <img src="/Assets/images/projects01.png" width="250" class="project__img">
+          <h4 class="p-3">
+            <strong>JavaScript Weather Forecast</strong>
+          </h4>
+          <p class="p-3">I created this project to work on my JS skills.  
+            The website prompts user for permission about their location and 
+            based on the user's location, provides weather forecast.
+   </p>
+        </div>
+        <!--Project item 02-->
+        <div>
+            <img src="/Assets/images/projects02.png" width="300" class="project__img">
+            <h4 class="p-3">
+              <strong>Bug Smasher Game</strong>
+            </h4>
+            <p class="p-3">I created this project to work on my JS skills.  
+              The game gives the user score based on how many times the user smashes the bug.</p>
+          </div>
+
+          <!--Portfolio item 03-->
+          <div>
+              <img src="/Assets/images/Project04.png" width="400"  class="project__img">
+             
+              <h4 class="p-3">
+                <strong>BMI Calculator</strong>
+              </h4>
+              <p class="p-3">I created this project to work on my .NET framework Skills.
+                The application takes in user information, and gives BMI results based
+                on user's input.</p>
+            </div>
+          </div>
+        </section><% } else {%><%} %>
+
+<!--Services Section-->
+<% if (title == "Services"){ %>
+  <section class="my-projects" id="project">
+    <h2 class="project__title project_title-myproject">My Services</h2>
+    <div class="projects">
+      
+      <!--Service item 01-->
+      <div>
+          <img src="/Assets/images/service01.jpg" width="400" class="project__img">
+          <h4 class="p-3">
+            <strong>Web Development</strong>
+          </h4>
+        </div>
+        <!--Service item 02-->
+        <div>
+            <img src="/Assets/images/service02.jpg" width="410" class="project__img">
+            <h4 class="p-3">
+              <strong>General Programming</strong>
+            </h4>
+        </div>
+        <!--Service item 03-->
+         <div>
+          <img src="/Assets/images/service03.jpeg" width="367" class="project__img">
+          <h4 class="p-3">
+            <strong>Web Maintenance</strong>
+          </h4>
+      </div>
+    </div>     
+    </section><% } else {%><%} %>
+    <!--Contact Section-->
+    <% if (title == "Contact"){ %>
+      <div class="container">
+        <form action="action_page.php">
+          <h3>Contact Us </h2>
+      
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Email</label>
+          <input type="text" id="Ename" name="email" placeholder="Your Email..">
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <div class="text-center p-3">
+            <a class="btn btn-dark" href="/">Send</a>
+          </div>
+      
+        </form>
+      </div>      
+          <div class="status"></div>
+      </div>
+      <br><br><br><br>
+        <div class="text-center">
+          <ul class="list-unstyled mb-1" id="bullet_contact">
+          <li id="bullet_contact">
+          <a href="https://www.linkedin.com/in/yasaman-barzegar" style="color:#290009" target="_blank" >
+          <i class=" fab fa-linkedin mt-4 fa-2x"></i>
+          </a>
+          </li>
+          <li id="bullet_contact">
+          <a href="mailto:yasaman.barz@gmail.com" style="color:#290009">
+          <i class="fas fa-envelope mt-4 fa-2x"></i>
+          </a>
+          </li>
+          </ul>
+        </div> 
+  </div><% } else {%><%} %>
+
+    
