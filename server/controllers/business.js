@@ -25,7 +25,6 @@ module.exports.displayBusinessList = (req, res, next) => {
 
 module.exports.displayAddPage = (req, res, next) => {
     res.render('business/add', {title: 'Add Contact',
-    BusinessList: businessList,
     displayName: req.user ? req.user.displayName : ''})          
 }
 
@@ -65,7 +64,6 @@ module.exports.displayEditPage = (req, res, next) => {
         {
             //show the edit view
             res.render('business/edit', {title: 'Edit Contact', Contact: contactToEdit,
-            BusinessList: businessList,
             displayName: req.user ? req.user.displayName : ''})
         }
     });
